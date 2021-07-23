@@ -1,9 +1,9 @@
 describe('The isFromBellville function', function(){
 
-    it('should check if isFromBellville', function(){
+    it('should returns True if registration starts with CY ', function(){
         assert.equal(true, isFromBellville('CY 123'));
     });
-    it('should check if isFromCapetown', function(){
+    it('should returns false if registration does not starts with CY', function(){
         assert.equal(false, isFromBellville('CA 123'));
     });
 });

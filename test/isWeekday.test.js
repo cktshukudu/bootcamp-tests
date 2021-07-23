@@ -1,8 +1,8 @@
 describe('The isWeekday function', function(){
-    it('should check if the isWeekday', function(){
+    it('Should return True if valid day of the week is passed as input', function(){
           assert.equal(isWeekday('Monday'), true);
       });
-      it('should check if the isWeekday', function(){
+      it('Should return False if week-end day is passed as input', function(){
           assert.equal(isWeekday('Saturday'), false);
       });
   });

@@ -1,12 +1,13 @@
 describe('The totalPhoneBill function', function(){
-    it('should count totalPhoneBill', function(){
+    it('should give you your total phone bill if you send 3 smss and make 2 calls', function(){
           assert.equal(totalPhoneBill('call, sms, call, sms, sms'), "R7.45");
-          assert.equal(totalPhoneBill('sms, sms, sms'), 'R1.95');
-          assert.equal(totalPhoneBill('call, call'), 'R5.50');
-  
+    });
+    it('should give you your total phone bill if you make 1 call and send 1 sms', function(){
+          assert.equal(totalPhoneBill('call, sms'), 'R3.40');
+
+    });
+    it('should give you your total phone bill if you call 2 calls', function(){
+        assert.equal('R1.30', totalPhoneBill('sms, sms'));
       });
-      it('should count totalPhoneBill', function(){
-          assert.equal(totalPhoneBill(''), 'R0.00');
-      });
-  });
   
+    });
